@@ -38,22 +38,74 @@ export default function Home() {
             <span className="w-3 h-3 bg-red-400 rounded-full inline-block"></span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-            {/* Example Product */}
-            <div className="flex group relative flex-col bg-cover text-center bg-white rounded-2xl overflow-hidden">
-              <Image src="/bags.jpg" alt="Bag" width={300} height={300} className="w-full h-[300px]" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            {/* Card 1 */}
+            <div className="flex group relative flex-col bg-white text-center rounded-2xl overflow-hidden">
+              <Image
+                src="/bags.jpg"
+                alt="Zuppo's Bag"
+                width={500}
+                height={300}
+                className="w-full h-[300px] object-cover"
+              />
               <p className="text-lg font-bold mt-2">zuppo&apos;s bag</p>
-              <p className="text-md text-black">
-                <span className="font-bold">₹</span>50000.00
-              </p>
+              <p className="text-md text-black"><span className="font-bold">₹</span>50000.00</p>
               <button className="hidden group-hover:block bg-purple-600 absolute p-[6px] rounded-2xl w-full top-[75%] text-white">
                 Add to cart
               </button>
             </div>
 
-            {/* Repeat for Shoes, Watch, Headphone... */}
-            {/* ... */}
+            {/* Card 2 */}
+            <div className="flex group relative flex-col bg-white text-center rounded-2xl overflow-hidden">
+              <Image
+                src="/shoes.jpg"
+                alt="Ladies Shoes"
+                width={500}
+                height={300}
+                className="w-full h-[300px] object-cover"
+              />
+              <p className="text-lg font-bold mt-2">Ladies shoes</p>
+              <p className="text-md text-black"><span className="font-bold">₹</span>5000.00</p>
+              <button className="hidden group-hover:block bg-purple-600 absolute p-[6px] rounded-2xl w-full top-[75%] text-white">
+                Add to cart
+              </button>
+            </div>
+
+            {/* Card 3 */}
+            <div className="flex group relative flex-col bg-white text-center rounded-2xl overflow-hidden">
+              <Image
+                src="/watch.jpg"
+                alt="Zuppo's Watch"
+                width={500}
+                height={300}
+                className="w-full h-[300px] object-cover"
+              />
+              <p className="text-lg font-bold mt-2">zuppo&apos;s watch</p>
+              <p className="text-md text-black"><span className="font-bold">₹</span>50000.00</p>
+              <button className="hidden group-hover:block bg-purple-600 absolute p-[6px] rounded-2xl w-full top-[75%] text-white">
+                Add to cart
+              </button>
+            </div>
+
+            {/* Card 4 */}
+            <div className="flex group relative flex-col bg-white text-center rounded-2xl overflow-hidden">
+              <Image
+                src="/headphone.jpg"
+                alt="Altar'd Headphone"
+                width={500}
+                height={300}
+                className="w-full h-[300px] object-cover"
+              />
+              <p className="text-lg font-bold mt-2">altar&apos;d Headphone</p>
+              <p className="text-md text-black"><span className="font-bold">₹</span>50000.00</p>
+              <button className="hidden group-hover:block bg-purple-600 absolute p-[6px] rounded-2xl w-full top-[75%] text-white">
+                Add to cart
+              </button>
+            </div>
+
           </div>
+
         </div>
       </div>
 
@@ -120,11 +172,38 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div className="flex relative flex-col bg-white rounded-2xl bg-cover overflow-hidden h-[231px]">
-              <Image src="/ceo.jpg" alt="CEO" width={300} height={231} className="object-cover w-full h-full" />
+            <div className="flex relative flex-col bg-white rounded-2xl overflow-hidden h-[231px]">
+              <Image src="/ceo.jpg" alt="CEO" fill className="object-cover" />
               <div className="bg-white absolute top-[67%] left-0.5 w-[50%] text-md p-[15px] rounded-2xl">
-                <p className="font-bold">murdul katkiya</p>
+                <p className="font-bold">Murdul Katkiya</p>
                 <p className="text-gray-600 text-sm">CEO</p>
+              </div>
+            </div>
+
+            {/* CFO */}
+            <div className="flex relative flex-col bg-white rounded-2xl overflow-hidden h-[231px]">
+              <Image src="/cfo.jpg" alt="CFO" fill className="object-cover" />
+              <div className="bg-white absolute top-[67%] left-0.5 w-[50%] text-md p-[15px] rounded-2xl">
+                <p className="font-bold">Sunil Patil</p>
+                <p className="text-gray-600 text-sm">CFO</p>
+              </div>
+            </div>
+
+            {/* Employee */}
+            <div className="flex relative flex-col bg-white rounded-2xl overflow-hidden h-[231px]">
+              <Image src="/employee.jpeg" alt="Employee" fill className="object-cover" />
+              <div className="bg-white absolute top-[67%] left-0.5 w-[50%] text-md p-[15px] rounded-2xl">
+                <p className="font-bold">Anuradha Kashayup</p>
+                <p className="text-gray-600 text-sm">Manager</p>
+              </div>
+            </div>
+
+            {/* Marketing */}
+            <div className="flex relative flex-col bg-white rounded-2xl overflow-hidden h-[231px]">
+              <Image src="/marketing.jpeg" alt="Marketing" fill className="object-cover" />
+              <div className="bg-white absolute top-[67%] left-0.5 w-[50%] text-md p-[15px] rounded-2xl">
+                <p className="font-bold">Kunal Katkiya</p>
+                <p className="text-gray-600 text-sm">Marketing & Designing</p>
               </div>
             </div>
 
